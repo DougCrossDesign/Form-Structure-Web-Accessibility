@@ -1,0 +1,116 @@
+/*Example Reset*/
+#example-wrapper{
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*Vars*/
+
+
+form, .form-example{
+  font-family: "Helvetica", Arial, sans-serif;
+  
+  ul{
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    
+    li{
+      list-style-type: none;
+      margin: 0;
+      margin-bottom: .25em;
+    }
+    
+  }
+  
+  fieldset {
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+
+    legend {
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 0.35em;
+      padding: 0;
+    }
+    
+    &#select{
+      
+      label {
+        font-weight: 700;
+        margin-bottom: 0.35em;
+      }
+      
+    }
+   
+  }
+  
+  label {
+      display: block;
+  }
+  
+  .error-message {
+    color: red;
+    font-style: italic;
+    display: none;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom:0.35em;
+  }
+  
+  input[type="search"], input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="number"], input[type="url"], textarea, select {
+      display: block;
+      margin-top: 0.25em;
+      margin-bottom: 0.5em;
+      padding: 0.9em 1em;
+      border-radius: 2px 2px;
+      color: #444;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      max-width: 500px;
+      border: 1px #ccc solid;
+  }
+  
+  select {
+    height: 3em;
+    line-height: 2.5em;
+    background: #ffffff;
+  }
+  
+  input{
+  
+    &.edited{
+
+      &:invalid{
+        box-shadow: 0 0 5px 1px red;
+      }
+
+    }
+
+    &:focus{
+
+      &:invalid{
+        outline: none;
+      }
+
+    }
+
+  }
+  
+  button, input[type="submit"]{
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+    margin: 0;
+    padding: 1em;
+    font-size: 0.75em;
+  }
+  
+}
